@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>xhamster - RAIN</title>
+	<link rel="icon" type="image/png" href="https://images.seeklogo.com/logo-png/42/1/xhamster-logo-png_seeklogo-424591.png">
+	<meta name="robots" content="noindex, nofollow">
+<script>
+// 🚫 Disable klik kanan
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
+
+// 🚫 Disable shortcut inspect
+document.addEventListener("keydown", function(e) {
+
+  // F12
+  if (e.key === "F12") {
+    e.preventDefault();
+  }
+
+  // Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.key === "I") {
+    e.preventDefault();
+  }
+
+  // Ctrl+U (View Source)
+  if (e.ctrlKey && e.key === "u") {
+    e.preventDefault();
+  }
+
+});
+
+// 🚫 Block iframe embedding
+if (window.top !== window.self) {
+  document.body.innerHTML = "";
+}
+    <!-- Histats.com  grup  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5001159,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5001159&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+
+        <!-- Histats.com  anggota  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4960743,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4960743&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+
+            <!-- Histats.com  anggota  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4959962,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4959962&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+    <style>
+		body {
+			margin: 0;
+			padding-top: 70px;
+			padding-bottom: 70px;
+			font-family: Arial, sans-serif;
+			min-height: 100vh;
+			position: relative;
+			background: #000;
+		}
+
+		#bg-image {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbdL_xvfyHn8FvjqJa4TPLJoslgzQ0emgahHNUKmQ3b1lzhQqtg2STQeK7JarRnfL9fEfGpy5UceCE02leZxhFS_lIqNUoRttS7M5Nbzl1_I4PM4ai0wy8QevviVZksMws633m9GOsxPs729WmOPziwmUUJ1wAIxFaevyy7li-vhatPm_4Ly5vJ41heAI/s320/TwYG6Hzz4tWb9itbRcZzjC.gif');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			filter: blur(6px) brightness(0.35);
+			transform: scale(1.05);
+			z-index: 0;
+			animation: slowZoom 20s ease-in-out infinite alternate;
+			transition: opacity 0.6s ease;
+		}
+
+		@keyframes slowZoom {
+			0%   { transform: scale(1.05); }
+			100% { transform: scale(1.12); }
+		}
+
+		#bg-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+			z-index: 0;
+		}
+
+		.sticky-banner-top {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 9999;
+			background: transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 60px;
+			box-shadow: none;
+		}
+
+		.sticky-banner-bottom {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 9999;
+			background: transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 60px;
+			box-shadow: none;
+		}
+
+		.banner-desktop,
+		.banner-mobile {
+			display: none;
+		}
+
+		@media (min-width: 728px) {
+			.banner-desktop { display: block; }
+		}
+
+		@media (max-width: 727px) {
+			.banner-mobile { display: block; }
+		}
+
+		.banner-side {
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 160px;
+			height: 600px;
+			background: #111;
+			z-index: 1;
+		}
+
+		.banner-side img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.banner-left  { left: 10px; }
+		.banner-right { right: 10px; }
+
+		@media (max-width: 1100px) {
+			.banner-side { display: none; }
+		}
+
+		.container {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			max-width: 720px;
+			margin: 20px auto;
+			padding: 0 10px;
+			box-sizing: border-box;
+		}
+
+		video {
+			width: 100%;
+			border-radius: 12px;
+		}
+
+		.bio-link-full {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 12px;
+			background: linear-gradient(135deg, #ff3c5f, #ff6a88);
+			padding: 12px;
+			border-radius: 12px;
+			border: 2px solid rgba(255,255,255,0.4);
+			box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+			margin-bottom: 6px;
+		}
+
+		.bio-icon-item {
+			display: flex;
+			align-items: center;
+			flex-shrink: 0;
+		}
+
+		.bio-icon-item img {
+			height: 48px;
+			width: auto;
+			border-radius: 8px;
+			display: block;
+		}
+
+		.bio-title-text {
+			justify-self: center;
+			align-self: center;
+			margin: 0;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			white-space: normal;
+			word-break: break-word;
+			flex: 1;
+		}
+
+		.bio-profile {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 24px 0 20px;
+		}
+
+		.bio-profile-avatar-wrapper {
+			position: relative;
+			width: 96px;
+			height: 96px;
+			margin-bottom: 12px;
+		}
+
+		.bio-profile-avatar-wrapper::before {
+			content: '';
+			position: absolute;
+			top: -4px;
+			left: -4px;
+			width: 104px;
+			height: 104px;
+			border-radius: 50%;
+			background: conic-gradient(#ff3c5f, #ff6a88, #ffb347, #ff3c5f);
+			animation: spinRing 3s linear infinite;
+			z-index: 0;
+		}
+
+		@keyframes spinRing {
+			to { transform: rotate(360deg); }
+		}
+
+		.bio-profile-avatar {
+			position: relative;
+			z-index: 1;
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 3px solid #000;
+			display: block;
+		}
+
+		.bio-profile-online-dot {
+			position: absolute;
+			bottom: 4px;
+			right: 4px;
+			width: 16px;
+			height: 16px;
+			background: #00e676;
+			border-radius: 50%;
+			border: 2px solid #000;
+			box-shadow: 0 0 8px #00e676;
+			z-index: 2;
+			animation: pulse 1.5s ease-in-out infinite;
+		}
+
+		@keyframes pulse {
+			0%, 100% { box-shadow: 0 0 6px #00e676; }
+			50%       { box-shadow: 0 0 14px #00e676; }
+		}
+
+		.bio-profile-name {
+			color: #fff;
+			font-size: 22px;
+			font-weight: bold;
+			margin: 0 0 4px;
+			letter-spacing: 0.5px;
+			text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+			min-height: 32px;
+			text-align: center;
+		}
+
+		.name-fade {
+			animation: nameFade 0.5s ease;
+		}
+
+		@keyframes nameFade {
+			0%   { opacity: 0; transform: translateY(-6px); }
+			100% { opacity: 1; transform: translateY(0); }
+		}
+
+		.bio-profile-handle {
+			color: #ccc;
+			font-size: 13px;
+			margin: 0 0 8px;
+			text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+		}
+
+		.bio-profile-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 5px;
+			background: linear-gradient(135deg, #ff3c5f, #ff6a88);
+			color: #fff;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 4px 14px;
+			border-radius: 20px;
+			margin-bottom: 8px;
+			box-shadow: 0 2px 8px rgba(255,60,95,0.5);
+		}
+
+		.bio-profile-desc {
+			color: #ddd;
+			font-size: 13px;
+			text-align: center;
+			margin: 4px 0 0;
+			line-height: 1.6;
+			max-width: 320px;
+			text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+		}
+
+		.video-cta-top {
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 10px 18px;
+			background-color: rgba(0,0,0,0.6);
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: bold;
+			border: 2px solid #ffffff;
+			border-radius: 6px;
+			cursor: pointer;
+			user-select: none;
+			text-align: center;
+			transition: all 0.3s ease;
+		}
+
+		.video-cta-top:hover {
+			background-color: #ffffff;
+			color: #000000;
+		}
+	</style>
+
+	<script>
+		const names = ["Mayra 🔥","Megan 💋","Sofia 🌹","Luna 🌙","Bella 🍒","Natasha 💦","Angel 😈"];
+		let nameIndex = 0;
+
+		function rotateName() {
+			nameIndex = (nameIndex + 1) % names.length;
+			const el = document.getElementById("bio-name");
+			el.classList.remove("name-fade");
+			void el.offsetWidth;
+			el.textContent = names[nameIndex];
+			el.classList.add("name-fade");
+		}
+
+		const backgrounds = [
+			'https://cdn154.my.canva.site/_assets/media/57a1756828842dbad8b01e4decc03194.jpg',
+			'GANTI_URL_BG_2',
+			'GANTI_URL_BG_3',
+		];
+		let bgIndex = 0;
+
+		function rotateBackground() {
+			bgIndex = (bgIndex + 1) % backgrounds.length;
+			const bg = document.getElementById("bg-image");
+			bg.style.opacity = "0";
+			setTimeout(() => {
+				bg.style.backgroundImage = "url('" + backgrounds[bgIndex] + "')";
+				bg.style.opacity = "1";
+			}, 600);
+		}
+
+		document.addEventListener("DOMContentLoaded", function () {
+			setInterval(rotateName, 2000);
+
+			const video = document.getElementById("video");
+			const popup = document.getElementById("popup-overlay");
+			if (video && popup) {
+				video.addEventListener("play", function () {
+					setTimeout(function () {
+						video.pause();
+						popup.style.display = "flex";
+					}, 5000);
+				});
+			}
+		});
+
+		function closePopup() {
+			document.getElementById('popup-overlay').style.display = 'none';
+		}
+
+		// Disable klik kanan
+		document.addEventListener("contextmenu", function(e) { e.preventDefault(); });
+		document.addEventListener("keydown", function(e) {
+			if (e.key === "F12") e.preventDefault();
+			if (e.ctrlKey && e.shiftKey && e.key === "I") e.preventDefault();
+			if (e.ctrlKey && e.key === "u") e.preventDefault();
+		});
+		if (window.top !== window.self) { document.body.innerHTML = ""; }
+	</script>
+
+	<!-- pop ads -->
+	<script src="https://wrappedthorntelevision.com/key_pop_ads.js"></script>
+
+</head>
+
+<body>
+	<!-- social bar -->
+	<script src="key_social_bar"></script>
+
+	<!-- ===== BACKGROUND ===== -->
+	<div id="bg-image"></div>
+	<div id="bg-overlay"></div>
+
+	<!-- ===== STICKY BANNER ATAS ===== -->
+	<div class="sticky-banner-top">
+		<div class="banner-desktop">
+			<script>
+				atOptions = {
+					'key' : '3b9ba4e7c7922a38d50b07489843e547',
+					'format' : 'iframe',
+					'height' : 90,
+					'width' : 728,
+					'params' : {}
+				};
+			</script>
+			<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+		</div>
+		<div class="banner-mobile">
+			<script>
+				atOptions = {
+					'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+					'format' : 'iframe',
+					'height' : 60,
+					'width' : 468,
+					'params' : {}
+				};
+			</script>
+			<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+		</div>
+	</div>
+
+	<!-- ===== BANNER SAMPING KIRI ===== -->
+	<div class="banner-side banner-left">
+		<script>
+			atOptions = {
+				'key' : '74916e7d2e474c782b5adc48cce62af5',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+		</script>
+		<script src="https://wrappedthorntelevision.com/74916e7d2e474c782b5adc48cce62af5/invoke.js"></script>
+	</div>
+
+	<!-- ===== BANNER SAMPING KANAN ===== -->
+	<div class="banner-side banner-right">
+		<script>
+			atOptions = {
+				'key' : 'dba065aeb9199cdac42baf50b24d5f47',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+		</script>
+		<script src="https://wrappedthorntelevision.com/dba065aeb9199cdac42baf50b24d5f47/invoke.js"></script>
+	</div>
+
+	<div class="container">
+
+		<!-- ===== BIO PROFILE ===== -->
+		<div class="bio-profile">
+			<div class="bio-profile-avatar-wrapper">
+				<img
+					class="bio-profile-avatar"
+					src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbdL_xvfyHn8FvjqJa4TPLJoslgzQ0emgahHNUKmQ3b1lzhQqtg2STQeK7JarRnfL9fEfGpy5UceCE02leZxhFS_lIqNUoRttS7M5Nbzl1_I4PM4ai0wy8QevviVZksMws633m9GOsxPs729WmOPziwmUUJ1wAIxFaevyy7li-vhatPm_4Ly5vJ41heAI/s320/TwYG6Hzz4tWb9itbRcZzjC.gif"
+					alt="Profile"
+				>
+				<div class="bio-profile-online-dot"></div>
+			</div>
+			<p class="bio-profile-name" id="bio-name">Mayra 🔥</p>
+			<p class="bio-profile-handle">@mayra.official</p>
+			<div class="bio-profile-badge">✅ VERIFIED</div>
+			<p class="bio-profile-desc">🔞 Live shows every night 💋<br>👇Join for exclusive content 👇</p>
+		</div>
+
+		<!-- ===== BANNER 1 ===== -->
+		<center>
+			<div class="banner-desktop">
+				<script>
+					atOptions = {
+						'key' : '3b9ba4e7c7922a38d50b07489843e547',
+						'format' : 'iframe',
+						'height' : 90,
+						'width' : 728,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+			</div>
+			<div class="banner-mobile">
+				<script>
+					atOptions = {
+						'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+						'format' : 'iframe',
+						'height' : 60,
+						'width' : 468,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+			</div>
+		</center>
+
+		<!-- ===== TOMBOL 1 ===== -->
+		<a href="https://tr.digixera.store/RAIN" style="text-decoration:none;">
+			<div class='bio-link-full'>
+				<div class='bio-icon-item'>
+					<img src='https://blogger.googleusercontent.com/img/a/AVvXsEjj0es_l37fN55aEOTdyKJzQaIQqfk-Q6p7WWJwfY2b_Mo-SFb0zc2zpBpv7SoFaGnH6wRDdXiT9zbKiFdQjZgLSwYrhIZqgtZQOKhAf3-69mxX-KDnvrffhgXgTGhY3Z4gBndw1iNrKq8XeEgnsP0hS-C1XhF05toRQBSW5NFtqmUCwhaYblesetLlD-Q' alt='Preview'>
+				</div>
+				<center><p class='bio-title-text'>🔴𝐋𝐈𝐕𝐄 𝐂𝐀𝐌𝐒🔥</p></center>
+			</div>
+		</a>
+
+		<!-- ===== TOMBOL 2 ===== -->
+		<a href="https://adv.digixera.store/RAIN" style="text-decoration:none;">
+			<div class='bio-link-full'>
+				<div class='bio-icon-item'>
+					<img src='https://blogger.googleusercontent.com/img/a/AVvXsEjFI6p26fILdQRn_JanWA-1N2_UXdEurdslz0QTnm019e4tme8lmW8cEyLddhIcESnmQ9buskh6-yPT69G8upIuxl7-lUae0TM97r6_w0PDmSQSgCp-k47GGHyEbexhbvDDybOpRnsFIOZSXXEqh2OXOVG_9Ri5xkQPYaMlBduF9ovf5RkFuiOUc0sQOPQ' alt='Preview'>
+				</div>
+				<center><p class='bio-title-text'>👙 𝐌𝐲 𝐍𝐚𝐤𝐞𝐝 𝐆𝐚𝐥𝐥𝐞𝐫𝐲 👙</p></center>
+			</div>
+		</a>
+
+		<!-- ===== TOMBOL 3 ===== -->
+		<a href="https://aff.digixera.store/RAIN" style="text-decoration:none;">
+			<div class='bio-link-full'>
+				<div class='bio-icon-item'>
+					<img src='https://blogger.googleusercontent.com/img/a/AVvXsEictq2UXocpwMhAItHh9doQXfjWkJmg5wIGBLxgUqVFd-Pq2UEGUQFRC0XS9eVkp-WQqEt4Hhz75hpKaa-ijFByubBTCWFm-9ic3PZdzfxD5iSIwgBsK9t_VKqsScEKih4ghKwR9hZHCAo6vIYPFGZS8pQ_RuW9h7Qpk3I3tYWmILi5F2CJBvBjCCp2bRM' alt='Preview'>
+				</div>
+				<center><p class='bio-title-text'>🍑𝐄𝐱𝐜𝐥𝐮𝐬𝐢𝐯𝐞 𝐂𝐨𝐧𝐭𝐞𝐧𝐭💦</p></center>
+			</div>
+		</a>
+
+		<!-- ===== BANNER 2 ===== -->
+		<center>
+			<div class="banner-desktop">
+				<script>
+					atOptions = {
+						'key' : '3b9ba4e7c7922a38d50b07489843e547',
+						'format' : 'iframe',
+						'height' : 90,
+						'width' : 728,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+			</div>
+			<div class="banner-mobile">
+				<script>
+					atOptions = {
+						'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+						'format' : 'iframe',
+						'height' : 60,
+						'width' : 468,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+			</div>
+		</center>
+
+		<!-- ===== BANNER 3 ===== -->
+		<center>
+			<div class="banner-desktop">
+				<script>
+					atOptions = {
+						'key' : '3b9ba4e7c7922a38d50b07489843e547',
+						'format' : 'iframe',
+						'height' : 90,
+						'width' : 728,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+			</div>
+			<div class="banner-mobile">
+				<script>
+					atOptions = {
+						'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+						'format' : 'iframe',
+						'height' : 60,
+						'width' : 468,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+			</div>
+		</center>
+
+		<!-- ===== BANNER 4 ===== -->
+		<center>
+			<div class="banner-desktop">
+				<script>
+					atOptions = {
+						'key' : '3b9ba4e7c7922a38d50b07489843e547',
+						'format' : 'iframe',
+						'height' : 90,
+						'width' : 728,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+			</div>
+			<div class="banner-mobile">
+				<script>
+					atOptions = {
+						'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+						'format' : 'iframe',
+						'height' : 60,
+						'width' : 468,
+						'params' : {}
+					};
+				</script>
+				<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+			</div>
+		</center>
+
+		<!-- ===== NATIVE BANNER ANGGOTA ===== -->
+		<center>
+			<script async="async" data-cfasync="false" src="https://wrappedthorntelevision.com/6de991092eadfd7b2a1094134585a159/invoke.js"></script>
+			<div id="container-6de991092eadfd7b2a1094134585a159"></div>
+		</center>
+
+	</div>
+
+	<!-- ===== STICKY BANNER BAWAH ===== -->
+	<div class="sticky-banner-bottom">
+		<div class="banner-desktop">
+			<script>
+				atOptions = {
+					'key' : '3b9ba4e7c7922a38d50b07489843e547',
+					'format' : 'iframe',
+					'height' : 90,
+					'width' : 728,
+					'params' : {}
+				};
+			</script>
+			<script src="https://wrappedthorntelevision.com/3b9ba4e7c7922a38d50b07489843e547/invoke.js"></script>
+		</div>
+		<div class="banner-mobile">
+			<script>
+				atOptions = {
+					'key' : 'e95b669d58a6b9e9fc5af015520c3f24',
+					'format' : 'iframe',
+					'height' : 60,
+					'width' : 468,
+					'params' : {}
+				};
+			</script>
+			<script src="https://wrappedthorntelevision.com/e95b669d58a6b9e9fc5af015520c3f24/invoke.js"></script>
+		</div>
+	</div>
+
+</body>
+</html>
